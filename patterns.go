@@ -3,11 +3,12 @@ package mafmt
 import (
 	"strings"
 
-	ma "github.com/jbenet/go-multiaddr"
+	ma "gx/ipfs/QmVamAeNWEFjKqNZLCMo4EiYrFRnZsMQyXocPvjyXZJJj2/go-multiaddr"
 )
 
 // Define IP as either ipv4 or ipv6
-var IP = Or(Base(ma.P_IP4), Base(ma.P_IP6))
+// Define DNS as either ipv4 or ipv6 record
+var IP = Or(Base(ma.P_IP4), Base(ma.P_IP6), Base(ma.P_DNS))
 
 // Define TCP as 'tcp' on top of either ipv4 or ipv6
 var TCP = And(IP, Base(ma.P_TCP))
