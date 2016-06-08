@@ -3,7 +3,7 @@ package mafmt
 import (
 	"strings"
 
-	ma "gx/ipfs/QmVamAeNWEFjKqNZLCMo4EiYrFRnZsMQyXocPvjyXZJJj2/go-multiaddr"
+	ma "github.com/RealImage/go-multiaddr"
 )
 
 // Define IP as either ipv4 or ipv6
